@@ -1,11 +1,3 @@
-const dic = {
-    "nombre": "",
-    "descripcion": "",
-    "precio": "",
-    "horarios": ""
-
-}
-
 const form = document.querySelector('#crearTutoriaForm');
 
 form.addEventListener('submit', function (event) {
@@ -16,15 +8,18 @@ form.addEventListener('submit', function (event) {
     const precio = document.getElementById('precio').value;
     const horarios = document.getElementById('horarios').value;
 
-    dic.nombre = nombre
-    dic.descripcion = descripcion
-    dic.precio = precio
-    dic.horarios = horarios
-    localStorage.setItem('datosTutoria', JSON.stringify(dic));
-    alert("tutoria: "+nombre+" creada con exito!")
+    const dic = {
+        nombre: nombre,
+        descripcion: descripcion,
+        precio: precio,
+        horarios: horarios
+    };
 
+    let datosTutorias = JSON.parse(localStorage.getItem('datosTutoria')) || [];
 
+    datosTutorias.push(dic);
+
+    localStorage.setItem('datosTutoria', JSON.stringify(datosTutorias));
+    alert("Tutoría: " + nombre + " creada con éxito!");
 });
-console.log(dic)
-
 
