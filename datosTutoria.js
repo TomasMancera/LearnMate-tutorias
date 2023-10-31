@@ -7,7 +7,7 @@ form.addEventListener('submit', function (event) {
     const descripcion = document.getElementById('descripcion').value;
     const precio = document.getElementById('precio').value;
     const horarios = document.getElementById('horarios').value;
-
+// Almacenar la infomacion del formulario de tutoria en un diccionario
     const dic = {
         nombre: nombre,
         descripcion: descripcion,

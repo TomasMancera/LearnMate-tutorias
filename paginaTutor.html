@@ -51,8 +51,8 @@
               <p class="card-text"><span class="descripcion"></span></p>
               <p class="card-text"><span class="precio"></span></p>
               <p class="card-text"><span class="horarios"></span></p>
-              <button class="btn btn-primary enrollBtn">Editar</button>
-            <button class="btn btn-primary enrollBtn">Eliminar</button>
+              <button id="edit" class="btn btn-primary enrollBtn">Editar</button>
+              <button id="delete" class="btn btn-primary enrollBtn">Eliminar</button>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
             <input type="number" class="form-control mb-2" id="precio" placeholder="Precio">
             <input type="text" class="form-control mb-2" id="horarios" placeholder="Horarios (separados por comas)">
             <div id="dropZone" class="drop-zone" onclick="triggerInputFile()">
-              <span class="drop-zone__prompt">Sube tu contenido y/o archivos aqui</span>
+              <span class="drop-zone__prompt">Arrastra o da Clic para subir tu contenido aqui</span>
               <input type="file" name="fileInput" id="fileInput"class="drop-zone__input">
             </div>
             <button type="submit" class="btn btn-primary">Crear</button>
@@ -91,6 +91,7 @@
   <script src="datosTutoria.js"></script>
   <script src="obtenerDatosTutoria.js"></script>
   <script src="dragAndDrop.js"></script>
+  <script src="eliminarTutoria.js"></script>
   
  
 </body>

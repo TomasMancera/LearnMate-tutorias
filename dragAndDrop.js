@@ -33,11 +33,12 @@ function handleFiles(files) {
       
       reader.onload = function(e) {
         dropZone.innerHTML = `<img src="${e.target.result}" class="preview-image" />`;
+        
       };
       
       reader.readAsDataURL(file);
     } else {
-      dropZoneText.innerText = "Archivo no compatible. Solo se aceptan imágenes.";
+      alert("Archivo no compatible")
     }
   }
 
