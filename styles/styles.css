@@ -5,17 +5,35 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* header section */
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: #000;
+    background-color: #f7f7f7;
 }
 
 header h1 {
     font-size: 24px;
-    color: white;
+    color: #000;
 }
+
+.btn-contact {
+    background-color: #2D3EC8;
+    padding: 10px 20px  ;
+    color: white;
+    border-radius: 20px;
+}  
+
+.btn-contact:hover{
+    background-color: #62626251;
+    padding: 10px 20px  ;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}  
+
 
 nav ul {
     list-style-type: none;
@@ -29,51 +47,93 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #323138;
 }
+
+
+/* Main section */
 
 main {
-    display: flex;
-    justify-content: end;
-    padding: 50px;
-    background: url(/img/pepe.png);
-    background-position: center;
-    background-size: cover; 
-    background-attachment: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;       
 }
 
-
-
+.section-1{
+    width: 50%;
+}
+    
 main section h2 {
-
     font-size: 3.5rem;
-    color: #ADFCFE;
-}
-
-main section h2 {
-    background-image: linear-gradient(to right, #b0b0b0, #cc0099); 
+    background-image: linear-gradient(to right, #2D3EC8, #C124AD, #FF7C5D,  #F9F871); 
     -webkit-background-clip: text;  
     background-clip: text;
     color: transparent;
   }
 
-
-
 main section p {
-    color:white;
+    font-size: 1rem;
+    padding-right: 30px;
+    color: #323138;
+    text-align: justify;
 }
+
+.get-started, .learn-more{
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #2D3EC8;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.get-started,.learn-more a{
+    text-decoration: none;
+    color: white;
+}
+
+.get-started, .learn-more:visited{
+    text-decoration: none;
+    color: white;
+}
+
+
+button:hover {
+    background-color: #d8d8d8;    
+}
+
+/* Utilities section*/
+
 
 .utilities {
     display: flex;
     justify-content: space-between;
     padding: 100px 50px;
-    background-color: #0d0d0d;
+    background-color: #f1f1f1;
 }
 
-.utilities div {
+.utilities div {    
     text-align: center;
     width: 30%;
-    
+    padding: 25px 5px;
+    border: 2px solid #323138;
+    border-radius: 10px;
+    background-color: #37363d;
+    transition: 0.5s; 
+}
+
+.utilities div:nth-child(1):hover{
+    background-color: #2d3fc8c3; 
+}
+.utilities div:nth-child(2):hover{
+    background-color: #ff3c83b5; 
+}
+.utilities div:nth-child(3):hover{
+    background-color: #ffbe4ecd; 
 }
 
 .utilities span {
@@ -92,42 +152,17 @@ main section p {
 
 
 
-.get-started, .learn-more{
-    padding: 10px 15px;
-    margin-top: 20px;
-    margin-right: 10px;
-    background-color: #2F274E;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.get-started,.learn-more a{
-    text-decoration: none;
-    color: white;
-}
-
-
-button:hover {
-    background-color: #8f8f8f;    
-}
-
-
 .mas-info{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 40px;
-    background: url(/img/2.png  );
+    background-color: #f6f6f6;
     background-position: center;
     background-size: cover; 
     background-attachment: fixed;
 }
-
 
 .prepare-section{
     width: 40%;
@@ -135,14 +170,32 @@ button:hover {
 .prepare-section h2{
     margin-left: 10px;
     margin-bottom: 30px;
-    color: white;
+    color: #323138;
     font-size: 2.2rem;
-
 }
 
 .prepare-section p{
     text-align: justify;
     margin: 10px;
-    color: white;
+    color: #323138;
 }
+
+
+/* Review section*/
+
+.reviews h1, .reviews h2{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.carousel-item p{
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.carousel-item img{
+    margin: 0 auto;
+}
+
 
